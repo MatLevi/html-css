@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(247, 221, 184);
+    font-family: Arial;
+    font-size: 15pt;
+}
+h1 {
+    text-decoration: underline;
+    background-color: orange;
+    color: rgb(139, 16, 16);
+}
+h2 {
+    color: rgb(139, 16, 16)
+}
