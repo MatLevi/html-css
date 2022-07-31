@@ -32,11 +32,32 @@
             background-image: url('imagens/pattern003.png');
         }
 
+        div#fora {
+            position: relative;
+            height: 96vh;
+            background-color: #BD7DF5;
+        }
+
+        div#dentro {
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <div class="quadrado" id="q1"></div>
     <div class="quadrado" id="q2"></div>
     <div class="quadrado" id="q3"></div>
+    <br>
+    <div id="fora">
+        <div id="dentro"></div>
+    </div>
 </body>
 </html>
