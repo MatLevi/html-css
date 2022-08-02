@@ -58,6 +58,10 @@ section { /* Todas as sections */
     font-size: 3.5vw; /*(vw)porcentagem da largura da tela atual*/
 }
 
+section > p {
+    padding-bottom: 2em; /*Espaço de 2em abaixo de cada parágrafo*/
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -66,13 +70,26 @@ section.normal {
 section.imagem {
     background-color: rgb(71, 71, 71);
     color: white;
+    box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed; /*Efeit Parallax*/
 }
 
 section.imagem > p { 
     /*width: 400px; retirado e substituido por display: inline-block; e padding: 5px;*/
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.336); /*todo <p> dentro da section imagem, vai ter o fundo desta cor*/
+    background-color: rgba(0, 0, 0, 0.466); /*todo <p> dentro da section imagem, vai ter o fundo desta cor*/
+    text-shadow: 1px 1px 0px black ;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
